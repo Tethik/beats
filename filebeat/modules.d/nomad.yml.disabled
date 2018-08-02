@@ -1,8 +1,16 @@
-- module: {{ module }}
+- module: nomad
   # All logs
-  {{ fileset }}:
+  log:
     enabled: true
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
     #var.paths:
+
+  error:
+    enable: true
+
+
+  allocations:
+    enable: true
+
