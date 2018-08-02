@@ -1,0 +1,14 @@
+- name: allocation
+  description: Please add description
+  example: Please add example
+  type: group
+  fields:
+  - name: id
+    description: Please add description
+    example: Please add example
+  - name: name
+    description: Please add description
+    example: Please add example
+  - name: stream
+    description: Please add description
+    example: Please add example

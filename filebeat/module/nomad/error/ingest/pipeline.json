@@ -1,0 +1,41 @@
+{
+  "description": "Pipeline for parsing nomad error logs",
+  "processors": [{
+      "grok": {
+        "field": "message",
+        "patterns":[
+          "%{TIMESTAMP_ISO8601:nomad.error.timestamp} \\[%{WORD:nomad.error.severity}\\] %{GREEDYDATA:nomad.error.message}"
+        ],
+        "ignore_missing": true
+      }
+    },
+    {
+      "remove": {
+        "field": "message"
+      }
+    },
+    {
+      "rename": {
+        "field": "@timestamp",
+        "target_field": "read_timestamp"
+      }
+    },
+    {
+      "date": {
+        "field": "nomad.log.timestamp",
+        "target_field": "@timestamp",
+        "formats": ["YYYY/MM/DD'T'HH:mm:ss.SSSZZ"]
+      }
+    },
+    {
+      "remove": {
+        "field": "nomad.log.timestamp"
+      }
+    }],
+    "on_failure" : [{
+      "set" : {
+        "field" : "error.message",
+        "value" : "{{ _ingest.on_failure_message }}"
+      }
+    }]
+}

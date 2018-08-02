@@ -1,0 +1,19 @@
+{
+  "description": "Pipeline for parsing nomad allocations logs",
+  "processors": [{
+    "grok": {
+      "field": "source",
+      "patterns":[
+        "/opt/nomad/data/alloc/%{NOTSPACE:nomad.allocation.id}/alloc/logs/%{NOTSPACE:nomad.allocation.name}\\.%{NOTSPACE:nomad.allocation.stream}\\.\\d+"
+      ],
+      "ignore_missing": true
+    }
+  }
+    ],
+  "on_failure" : [{
+    "set" : {
+      "field" : "error.message",
+      "value" : "{{ _ingest.on_failure_message }}"
+    }
+  }]
+}

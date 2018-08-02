@@ -1,0 +1,9 @@
+- key: nomad
+  title: "nomad"
+  description: >
+    nomad Module
+  fields:
+    - name: nomad
+      type: group
+      description: >
+      fields:

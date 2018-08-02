@@ -1,0 +1,13 @@
+- name: log
+  description: Please add description
+  example: Please add example
+  type: group
+  fields:
+  - name: severity
+    description: Please add description
+    example: Please add example
+    type: keyword
+  - name: message
+    description: Please add description
+    example: Please add example
+    type: text

@@ -12,6 +12,7 @@ This file is generated! See scripts/docs_collector.py
   * <<filebeat-module-mongodb>>
   * <<filebeat-module-mysql>>
   * <<filebeat-module-nginx>>
+  * <<filebeat-module-nomad>>
   * <<filebeat-module-osquery>>
   * <<filebeat-module-postgresql>>
   * <<filebeat-module-redis>>
@@ -31,6 +32,7 @@ include::modules/logstash.asciidoc[]
 include::modules/mongodb.asciidoc[]
 include::modules/mysql.asciidoc[]
 include::modules/nginx.asciidoc[]
+include::modules/nomad.asciidoc[]
 include::modules/osquery.asciidoc[]
 include::modules/postgresql.asciidoc[]
 include::modules/redis.asciidoc[]

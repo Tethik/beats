@@ -1,0 +1,16 @@
+- name: error
+  description: Please add description
+  example: Please add example
+  type: group
+  fields:
+  - name: timestamp
+    description: Please add description
+    example: Please add example
+  - name: severity
+    description: Please add description
+    example: Please add example
+    type: keyword
+  - name: message
+    description: Please add description
+    example: Please add example
+    type: text

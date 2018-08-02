@@ -1,0 +1,9 @@
+dashboards:
+- id: Filebeat-nomad-info-Dashboard
+  file: Filebeat-nomad-info.json
+- id: Filebeat-nomad-error-Dashboard
+  file: Filebeat-nomad-error.json
+- id: Filebeat-nomad-allocations-Dashboard
+  file: Filebeat-nomad-allocations.json
+- id: Filebeat-nomad-log-Dashboard
+  file: Filebeat-nomad-log.json

@@ -27,6 +27,7 @@ grouped in the following categories:
 * <<exported-fields-mongodb>>
 * <<exported-fields-mysql>>
 * <<exported-fields-nginx>>
+* <<exported-fields-nomad>>
 * <<exported-fields-osquery>>
 * <<exported-fields-postgresql>>
 * <<exported-fields-redis>>
@@ -2638,6 +2639,117 @@ type: text
 
 The error message
 
+
+--
+
+[[exported-fields-nomad]]
+== nomad fields
+
+nomad Module
+
+
+
+[float]
+== nomad fields
+
+
+
+
+[float]
+== allocation fields
+
+Please add description
+
+
+*`nomad.allocation.id`*::
++
+--
+example: Please add example
+
+Please add description
+
+--
+
+*`nomad.allocation.name`*::
++
+--
+example: Please add example
+
+Please add description
+
+--
+
+*`nomad.allocation.stream`*::
++
+--
+example: Please add example
+
+Please add description
+
+--
+
+[float]
+== error fields
+
+Please add description
+
+
+*`nomad.error.timestamp`*::
++
+--
+example: Please add example
+
+Please add description
+
+--
+
+*`nomad.error.severity`*::
++
+--
+type: keyword
+
+example: Please add example
+
+Please add description
+
+--
+
+*`nomad.error.message`*::
++
+--
+type: text
+
+example: Please add example
+
+Please add description
+
+--
+
+[float]
+== log fields
+
+Please add description
+
+
+*`nomad.log.severity`*::
++
+--
+type: keyword
+
+example: Please add example
+
+Please add description
+
+--
+
+*`nomad.log.message`*::
++
+--
+type: text
+
+example: Please add example
+
+Please add description
 
 --
 
