@@ -3,7 +3,7 @@ module_version: 1.0
 var:
   - name: paths
     default:
-      - /opt/nomad/logs/nomad-stdout.log
+      - /opt/nomad/log/nomad-stdout.log
 
 ingest_pipeline: ingest/pipeline.json
 input: config/log.yml
