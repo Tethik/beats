@@ -1,5 +1,4 @@
 {
-  "pipeline" : {
   "description": "Pipeline for parsing nomad error logs",
   "processors": [{
       "grok": {
@@ -32,6 +31,5 @@
         "field" : "error.message",
         "value" : "{{ _ingest.on_failure_message }}"
       }
-    }]
-  }
+  }]
 }
